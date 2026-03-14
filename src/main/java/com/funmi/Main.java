@@ -5,11 +5,16 @@ import java.util.Scanner;
 public class Main {
     static void main() {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Enter word to reverse: ");
+//        System.out.println("Enter word to reverse: ");
+//        String value = scanner.nextLine();
+
+
+//        System.out.println(reverseWord(value));
+
+        System.out.println("word to count: ");
         String value = scanner.nextLine();
 
-        System.out.println(reverseWord(value));
-
+        System.out.println("the number of letters in the word " + value + " is:  " + countWordLength(value));
         scanner.close();
 
 
@@ -23,6 +28,11 @@ public class Main {
         }
         return reversed;
 
+    }
+
+
+    public static int countWordLength (String value){
+        return value.length();
     }
 
     }
