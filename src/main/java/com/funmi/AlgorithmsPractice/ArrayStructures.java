@@ -5,19 +5,19 @@ public class ArrayStructures {
 
     private int arraySize = 10;
 
-    public void generateRandomArray(){
+    public void generateRandomArray() {
 
-        for(int i =0; i < arraySize; i++){
+        for (int i = 0; i < arraySize; i++) {
 
-            theArray[i] = (int)(Math.random()*10)+10;
+            theArray[i] = (int) (Math.random() * 10) + 10;
         }
     }
 
-    public void printArray(){
+    public void printArray() {
 
         System.out.println("------------");
 
-        for(int i = 0; i < arraySize; i++){
+        for (int i = 0; i < arraySize; i++) {
 
             System.out.print("| " + i + " |");
             System.out.println(theArray[i] + " |");
@@ -35,15 +35,22 @@ public class ArrayStructures {
 
     }
 
-    public boolean doesArrayContainThisValue(int searchValue){
+    public boolean doesArrayContainThisValue(int searchValue) {
 
         boolean valueInArray = false;
 
-        for(int i = 0; i < arraySize; i++){
+        for (int i = 0; i < arraySize; i++) {
 
-            if
+            if (theArray[i] == searchValue) {
+
+                valueInArray = true;
+
+                return valueInArray;
+            }
         }
+        return valueInArray;
     }
+
      static void main(String[] args) {
 
         ArrayStructures newArray = new ArrayStructures();
@@ -51,7 +58,10 @@ public class ArrayStructures {
         newArray.generateRandomArray();
 
         newArray.printArray();
+
          System.out.println(newArray.getValueatIndex(4));
+
+         System.out.println(newArray.doesArrayContainThisValue(19));
 
     }
 
