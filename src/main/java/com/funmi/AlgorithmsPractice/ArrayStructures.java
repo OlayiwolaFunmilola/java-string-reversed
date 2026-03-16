@@ -51,6 +51,62 @@ public class ArrayStructures {
         return valueInArray;
     }
 
+    public void deleteIndex(int index){
+
+        if(index < arraySize){
+
+            for (int i = index; i < (arraySize -1); i++){
+
+                theArray[i] = theArray[i+1];
+            }
+
+            arraySize--;
+        }
+    }
+
+    public void  insertValue(int value){
+
+        if (arraySize < 50){
+
+            theArray[arraySize] = value;
+
+            arraySize++;
+        }
+    }
+
+    public String linearSearchForValue(int value){
+
+        boolean valueInArray = false;
+
+        String indexWithValue = "";
+
+        System.out.print("The VAlue was found in the following: ");
+
+        for(int i =0; i < arraySize; i++){
+
+            if(theArray[i] == value){
+
+                valueInArray = true;
+
+                System.out.print(i + " ");
+
+                indexWithValue+= i + " ";
+
+            }
+        }
+
+        if (!valueInArray){
+
+            indexWithValue = "None";
+
+            System.out.print(indexWithValue);
+        }
+
+        System.out.println();
+
+        return indexWithValue;
+    }
+
      static void main(String[] args) {
 
         ArrayStructures newArray = new ArrayStructures();
@@ -61,7 +117,17 @@ public class ArrayStructures {
 
          System.out.println(newArray.getValueatIndex(4));
 
-         System.out.println(newArray.doesArrayContainThisValue(19));
+         System.out.println(newArray.doesArrayContainThisValue(17));
+
+         newArray.deleteIndex(4);
+
+         newArray.printArray();
+
+         newArray.insertValue(55);
+
+         newArray.printArray();
+
+         newArray.linearSearchForValue(13);
 
     }
 
