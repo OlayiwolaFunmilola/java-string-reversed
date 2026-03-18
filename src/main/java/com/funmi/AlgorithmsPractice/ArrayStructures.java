@@ -107,7 +107,7 @@ public class ArrayStructures {
         return indexWithValue;
     }
 
-     static void main(String[] args) {
+    static void main(String[] args) {
 
         ArrayStructures newArray = new ArrayStructures();
 
