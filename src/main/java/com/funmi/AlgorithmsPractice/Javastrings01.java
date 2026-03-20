@@ -15,7 +15,18 @@ public class Javastrings01 {
             System.out.println("str != str1");{
 
             }
-        }
+            String str2 = new String("Hello");
+            String str3 = new String("Hello");
+
+            if(str2 == str3){
+                System.out.println("str2 == str3");
+            }else{
+                System.out.println("str2 != str3");{
+
+                }
+            }
+
+                }
 
     }
 
