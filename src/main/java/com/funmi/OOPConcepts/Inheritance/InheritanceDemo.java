@@ -1,4 +1,4 @@
-package com.funmi.OOPConcepts;
+package com.funmi.OOPConcepts.Inheritance;
 
 public class InheritanceDemo {
 

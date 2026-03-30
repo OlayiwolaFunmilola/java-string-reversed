@@ -1,6 +1,6 @@
-package com.funmi.OOPConcepts;
+package com.funmi.OOPConcepts.Inheritance;
 
-public class MountainBike extends Bicycle{
+public class MountainBike extends Bicycle {
 
     public int seatHeight;
 
