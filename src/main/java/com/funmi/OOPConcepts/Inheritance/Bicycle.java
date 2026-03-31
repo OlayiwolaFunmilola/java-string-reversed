@@ -33,6 +33,7 @@ class Bicycle {
 
     }
     public void speedUp(int increment){
+
         speed += increment;
     }
 }

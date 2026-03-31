@@ -1,0 +1,11 @@
+package com.funmi.ATMProject;
+
+import java.io.IOException;
+
+public class ATM extends OptionMenu {
+    static void main(String[] args) throws IOException {
+        OptionMenu optionMenu = new OptionMenu();
+
+        optionMenu.getLogin();
+    }
+}
